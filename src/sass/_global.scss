@@ -1,0 +1,74 @@
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  position: relative;
+
+  &-pal1 {
+    padding: 4.375rem 1.5rem;
+  }
+}
+a {
+  text-decoration: none;
+  @include dc(map-get($map: $colors, $key: backgro));
+}
+li {
+  list-style: none;
+}
+.hide-for-mobile {
+  @include breakpoint-down(dontShow) {
+    display: none;
+    // background-color: red;
+  }
+}
+.hide-for-desktop {
+  @include breakpoint-up(show) {
+    display: none;
+    // background-color: red;
+  }
+}
+.hide-for {
+  @include breakpoint-down(middle) {
+    display: none;
+  }
+}
+.hide-for-mobi {
+  @include breakpoint-down(button) {
+    display: none;
+  }
+}
+.hide {
+  @include breakpoint-down(icon) {
+    display: none;
+    background-color: rebeccapurple;
+  }
+}
+.highlight {
+  position: relative;
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+    // background-color: map-get($map: $colors, $key: text-1);
+    @include dc(map-get($map: $colors, $key: text-1));
+  }
+}
+.opacity {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  background-color: red;
+}
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

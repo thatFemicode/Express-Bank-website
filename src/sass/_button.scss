@@ -1,0 +1,26 @@
+%btn-shared {
+  display: inline-block;
+  //   font-size: 1.6rem;
+  font-family: inherit;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  //   text-align: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.hero {
+  &-cta-1 {
+    @extend %btn-shared;
+    @include dc(map-get($map: $colors, $key: text-1));
+  }
+  &-cta-2 {
+    @extend %btn-shared;
+    margin-left: -5px;
+    @include dc(map-get($map: $colors, $key: button2));
+  }
+}

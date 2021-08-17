@@ -1,0 +1,169 @@
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  // @include flex(flex, row, flex-end, center);
+  flex: 0 0 100%;
+  padding: 3rem 1rem;
+
+  @media screen and(max-width: 350px) {
+    padding: 0;
+    height: auto;
+  }
+  // margin-right: 40rem;
+  @include breakpoint-up(show) {
+    @include flex(flex, row, space-between, center);
+    // padding: 10rem 0;
+
+    // display: none;
+    z-index: 10000;
+  }
+  @include breakpoint-up(desktop) {
+    @include flex(flex, row, space-between, center);
+  }
+  &-banner {
+    @include absolute-el(0, 0, 0, 0);
+    background: map-get($map: $colors, $key: text-1);
+    height: 90%;
+    width: 100%;
+    opacity: 1;
+  }
+  &-text {
+    width: 100%;
+    color: map-get($map: $colors, $key: text-1);
+
+    @include breakpoint-up(show) {
+      flex: 2;
+      width: 60%;
+    }
+    @include breakpoint-up(desktop) {
+      flex: 2;
+    }
+
+    .text {
+      line-height: 2;
+      letter-spacing: 2px;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+
+      &-h3 {
+        width: 70%;
+        @include breakpoint-up(show) {
+          width: 50%;
+        }
+      }
+    }
+  }
+  &-img {
+    @include breakpoint-up(show) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 2;
+      position: relative;
+      // width: 200px;
+    }
+    @include breakpoint-up(desktop) {
+      flex: 1;
+    }
+    @include breakpoint-down(dontShow) {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex: 1;
+      position: relative;
+    }
+    // justify-content: center;
+    // align-items: flex-end;
+
+    img {
+      @include breakpoint-up(show) {
+        // margin-left: 15rem;
+        position: absolute;
+        height: 450px;
+        // bottom: 0;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 9;
+      }
+      @include breakpoint-up(desktop) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &-feature-banner {
+    position: absolute;
+    bottom: 186px;
+    left: 220px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0 2rem;
+    opacity: 0;
+    @include dc(map-get($map: $colors, $key: text-1));
+
+    @include breakpoint-up(show) {
+      left: 210px;
+      top: -200px;
+    }
+    @include breakpoint-up(desktop) {
+      top: -200px;
+    }
+    &.green {
+      top: 200px;
+
+      @include breakpoint-up(show) {
+        left: -10px;
+        top: 0px;
+      }
+      @include breakpoint-up(desktop) {
+        top: 0;
+      }
+
+      // text-align: center;
+    }
+    &.dark {
+      @include breakpoint-up(show) {
+        left: 240px;
+        top: 70px;
+      }
+      @include breakpoint-up(desktop) {
+        top: 120px;
+        left: 210px;
+      }
+    }
+  }
+  &-sponsor {
+    width: 80%;
+    margin-top: 1rem;
+    @include flex(flex, row, space-between, center);
+
+    @include breakpoint-up(show) {
+      width: 60%;
+    }
+    .slack {
+      margin-top: -2rem;
+    }
+  }
+  &-button {
+    // @include flex(flex, row, space-between, center);
+    display: inline-block;
+    margin-top: 1.5rem;
+    width: 50%;
+    a {
+      font-size: 0.7rem;
+    }
+  }
+  &-learn {
+    // padding: rem 0;
+    margin-top: 2rem;
+    @media screen and(max-width: 350px) {
+      margin-top: 0rem;
+    }
+    @include flex(flex, row, center, center);
+  }
+}

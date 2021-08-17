@@ -1,0 +1,232 @@
+.footer {
+  position: relative;
+  // margin-top: 4rem;
+  border-top-left-radius: 12rem;
+  // bottom: 0;
+  transition: transform 1s;
+  overflow: hidden;
+  text-align: center;
+  @include dc(map-get($map: $colors, $key: backgro));
+
+  //   height: 100vh;
+  //   padding: 5rem 0;
+  // @media screen and(max-width:400px) {
+  //   position: absolute;
+  // }
+  &-main {
+    @include breakpoint-up(footer) {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr auto;
+    }
+    @include breakpoint-up(grid) {
+      grid-template-columns: 2fr 1fr 1fr 2fr;
+      gap: 4rem;
+      justify-items: start;
+      // grid-template-rows: ;
+    }
+  }
+  &-links {
+    width: 100%;
+    @include breakpoint-up(footer) {
+      margin-top: 4rem;
+    }
+    &-body {
+      @include breakpoint-up(footer) {
+      }
+    }
+    p {
+      @include breakpoint-up(grid) {
+        text-align: left;
+      }
+    }
+    ul {
+      @include breakpoint-up(grid) {
+        text-align: left;
+      }
+    }
+  }
+  &-office {
+    width: 100%;
+    @include breakpoint-up(footer) {
+      margin-top: 4rem;
+    }
+
+    p {
+      @include breakpoint-up(grid) {
+        text-align: left;
+      }
+    }
+    h4 {
+      @include breakpoint-up(grid) {
+        text-align: left;
+      }
+    }
+
+    // @include breakpoint-up(grid) {
+    //   margin-top: 4rem;
+    //   display: flex;
+    //   flex-direction: column;
+    //   // grid-template-rows: ;
+    // }
+
+    // p {
+    //   @include breakpoint-up(grid) {
+    //     text-align: left;
+    //     // grid-template-rows: ;
+    //   }
+    // }
+  }
+  &-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-timer {
+    display: flex;
+    flex-direction: column;
+
+    &-body {
+      display: flex;
+      width: max-content;
+      justify-content: space-between;
+      width: max-content;
+      align-items: center;
+    }
+    &-section {
+      @include dc(map-get($map: $colors, $key: text-1));
+      padding: 1rem;
+      margin-left: 20px;
+      width: 100%;
+      border-radius: 10px;
+    }
+    &-unit {
+      font-size: 0.7rem;
+    }
+    &-counter {
+      // font-size: clamp(1.2rem, 1vw, 2rem);
+      font: size 1rem;
+    }
+  }
+  &-touch {
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  &-form {
+    // svg {
+    //   margin-top: 20rem;
+    // }
+
+    @include breakpoint-up(footer) {
+      margin-top: 2rem;
+    }
+    @include breakpoint-up(grid) {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+
+      // grid-template-rows: ;
+    }
+    form {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #000;
+      width: 40%;
+      margin: 1rem auto;
+      padding-bottom: 1rem;
+
+      @include breakpoint-up(grid) {
+        width: 100%;
+      }
+      #icon {
+        margin-right: -1rem;
+      }
+
+      .far {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+      input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+      .submit {
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        .fas {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  &-icon {
+    .fab {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      font-size: 1.2rem;
+      // background-color: map-get($map: $colors, $key: text-1);
+      @include dc(map-get($map: $colors, $key: text-1));
+      margin-right: 15px;
+    }
+  }
+  &-text {
+    position: relative;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    .underline {
+      // position: absolute;
+      position: relative;
+      height: 3px;
+      width: 20%;
+      border-radius: 3px;
+      top: 0px;
+      // left: 330px;
+      background-color: #000;
+      overflow: hidden;
+      margin: 0 auto;
+
+      // @media screen and(max-width:400px) {
+      //   left: 41%;
+      //   width: 17%;
+      // }
+      @include breakpoint-up(grid) {
+        width: 40%;
+      }
+
+      span {
+        width: 10px;
+        position: absolute;
+        border-radius: 3px;
+        height: 100%;
+        background: #fff;
+        top: 0;
+        left: 10px;
+        animation: moving 2s linear infinite;
+      }
+      &.closs {
+        width: 30%;
+        @include breakpoint-up(grid) {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}

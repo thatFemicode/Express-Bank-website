@@ -1,0 +1,122 @@
+.features {
+  transition: transform 1s;
+  @include breakpoint-down(list) {
+    height: auto;
+    width: 100%;
+  }
+  // @include breakpoint-up(show) {
+  //   height: 100vh;
+  // }
+  position: relative;
+  &-description {
+    width: 40%;
+
+    @include breakpoint-up(show) {
+      width: 15%;
+    }
+  }
+
+  &-contain {
+    position: relative;
+    @include flex(flex, column, space-between, flex-start);
+
+    @include breakpoint-up(show) {
+      @include flex(flex, column, space-between, flex-start);
+      //   display: flex;
+      //   justify-content: space-between;
+      //   flex-direction: row;
+    }
+    @include breakpoint-up(large) {
+      @include flex(flex, row, space-between, flex-start);
+      //   display: flex;
+      //   justify-content: space-between;
+      //   flex-direction: row;
+    }
+  }
+  &-text {
+    // @include flex(flex, row, center, center);
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    color: map-get($map: $colors, $key: text-1);
+
+    @include breakpoint-up(show) {
+      flex: 1;
+      margin-top: 3rem;
+      //   margin-right: 30rem;
+    }
+  }
+  &-header {
+    font-size: clamp(2rem, 3vw, 3rem);
+    @include breakpoint-up(show) {
+      width: 70%;
+    }
+    @include breakpoint-up(large) {
+      width: 100%;
+    }
+  }
+  &-title {
+    @include breakpoint-up(show) {
+      width: 40%;
+    }
+    @include breakpoint-up(large) {
+      width: 100%;
+    }
+  }
+  &-highlight {
+    text-transform: uppercase;
+  }
+  &-props {
+    @include breakpoint-up(show) {
+      flex: 1;
+      margin-left: 3rem;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint-down(wrap) {
+      //   width: 50%;
+    }
+  }
+  &-button {
+    margin-top: 2rem;
+
+    img {
+      margin-left: 1rem;
+    }
+  }
+  &-item {
+    width: 70%;
+
+    &:not(:last-child) {
+      margin-bottom: 1.4rem;
+    }
+
+    img {
+      margin-bottom: 1.5rem;
+
+      &:hover {
+        transform: rotate(45deg);
+      }
+    }
+    h5 {
+      color: map-get($map: $colors, $key: text-1);
+      font-size: 1rem;
+      font-weight: 600;
+
+      @include breakpoint-up(show) {
+        margin-bottom: 1rem;
+      }
+    }
+    @include breakpoint-up(show) {
+      width: 50%;
+    }
+    @include breakpoint-down(wrap) {
+      width: 50%;
+    }
+    @include breakpoint-down(list) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  // @include dc(map-get($map: $colors, $key: backgro));
+  position: relative;
+  // cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org/2000/svg'  width='24' height='24'font-size:10px;'><text y='50'>🚀</text></svg>")
+  //   auto;
+  // overflow: hidden;
+  &.noscroll {
+    overflow: hidden;
+  }
+}

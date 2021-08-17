@@ -1,0 +1,42 @@
+{
+  "name": "banking-app",
+  "version": "1.0.0",
+  "description": "banking app",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve",
+    "sass": "node-sass ./src/sass/main.scss ./src/css/main.css",
+    "watch": "webpack -w",
+    "build": "NODE_ENV=production webpack",
+    "clean": "rm -rf ./dist",
+    "build-dev": "webpack",
+    "start": "concurrently \"npm run sass\" \"npm run build\" \"npm run clean\" \"npm run serve\"",
+    "starte": "concurrently \"npm run sass\" \"npm run watch\" \"npm run clean\"",
+    "starter": "concurrently \"npm run sass\" \"npm run serve\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.1.0",
+    "cssnano": "^5.0.6",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^5.3.2",
+    "imagemin-webp-webpack-plugin": "^3.3.6",
+    "mini-css-extract-plugin": "^2.1.0",
+    "node-sass": "^6.0.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss-loader": "^6.1.1",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "gsap": "file:gsap-bonus.tgz"
+  }
+}

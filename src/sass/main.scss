@@ -1,0 +1,31 @@
+@import './variables';
+@import './mixin.scss';
+@import './base';
+@import './button';
+@import './header';
+@import './hero';
+@import './global';
+@import './features';
+@import './operations';
+@import './creditcard';
+@import './testimonial';
+@import './footer';
+@import './circles';
+@import './modal';
+
+.path {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

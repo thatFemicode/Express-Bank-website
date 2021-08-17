@@ -1,0 +1,70 @@
+@mixin flex(
+  $display: flex,
+  $flow: row nowrap,
+  $justify: flex-start,
+  $align: flex-start
+) {
+  display: $display;
+  flex-flow: $flow;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin absolute-el($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@function text($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin dc($color) {
+  background: $color;
+  color: text($color);
+}
+// creating breakpoints
+$breakpoints-up: (
+  'medium': 40em,
+  'large': 68.75em,
+  'mobi': 34em,
+  'show': 47em,
+  'footer': 50em,
+  'image': 37.5em,
+  'testi': 43.75em,
+  'grid': 62.5em,
+  'middle': 33em,
+  'list': 25em,
+  'desktop': 75em,
+  'remove': 45.0625rem,
+  'x-large': 87.5em,
+);
+$breakpoints-down: (
+  'small': 39.9375em,
+  'middle': 31.6875rem,
+  'dontShow': 47.5em,
+  'mobi': 33.0625em,
+  'button': 58.125em,
+  'wrap': 47em,
+  'list': 25em,
+  'icon': 31.25,
+  'medium': 63.9375em,
+  'remove': 45.0625rem,
+  'large': 87.4375em,
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

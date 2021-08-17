@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <!-- <link rel=" icon" href="./assets/favicon-4.png?" type="image/png" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Banking | Site</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container container-pall header-nav">
+        <a href="#" class="header-logo">
+          <img
+            src="./assets/favicon.svg"
+            class="header-img anim"
+            alt=""
+            data-version-number="3.0"
+          />
+        </a>
+
+        <a
+          href="#"
+          id="header-hamburger"
+          class="header-toggle anim hide-for-desktop"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <!-- <div class="header-links hide-for-mobile">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#operations">Operations</a>
+          <a href="#testimonilas">Testimonials</a>
+          <a href="#" class="header-cta">Login or Signup</a>
+        </div> -->
+        <div class="nav-links anim hide-for-mobile">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#operations" class="nav-link">Operations</a>
+          <a href="#testimonial" class="nav-link">Testimonials</a>
+          <a href="#home" class="nav-link header-cta show-modal">SignUp</a>
+        </div>
+        <div class="header-menu hide-for-desktop">
+          <a href="#home" class="mobile-link">Home</a>
+          <a href="#features" class="mobile-link">Features</a>
+          <a href="#operations" class="mobile-link">Operations</a>
+          <a href="#testimonilas" class="mobile-link">Testimonials</a>
+          <a href="#" class="header-cta mobile-link show-modal">SignUp</a>
+        </div>
+      </nav>
+      <div class="hero container container-pall">
+        <div class="hero-banner" id="bannerBgAddition"></div>
+        <div class="hero-text">
+          <h1 class="text">
+            When
+            <!-- Black highlight effect -->
+            <span class="highlight">banking</span>
+            meets
+            <span class="highlight">minimalist</span>
+          </h1>
+          <h3 class="text-h3">
+            A simpler banking experience for a simpler life
+          </h3>
+          <div class="hero-sponsor">
+            <span class="hero-slack heroes"
+              ><img src="./assets/slack.svg" alt="" class="slack"
+            /></span>
+            <span class="hero-amazon heroes"
+              ><img src="./assets/amazon.svg" alt=""
+            /></span>
+            <span class="hero-shopify heroes"
+              ><img src="./assets/shopify.svg" alt=""
+            /></span>
+          </div>
+          <div class="hero-button">
+            <a href="" class="hero-cta-1 show-modal">Get started</a>
+            <!-- <a href="" class="hero-cta-2">Open acc</a> -->
+          </div>
+          <a href="" class="hero-learn hide-for-desktop"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="42">
+              <g fill="#fff" fill-rule="evenodd" stroke="#000" stroke-width="2">
+                <rect width="24" height="40" x="1" y="1" rx="12" />
+                <rect width="4" height="4" x="11" y="12" rx="2" />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="hero-img hide-for-mobile">
+          <img src="./assets/hand.jpg" alt="" class="hero-hand" />
+          <div class="hero-feature-banner red" id="hero-feature-banner">
+            Loans
+          </div>
+          <div class="hero-feature-banner green" id="hero-feature-banner">
+            Transfer
+          </div>
+          <div class="hero-feature-banner dark" id="hero-feature-banner">
+            Account
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="features" class="features section-hidden">
+      <div class="container container-pal1">
+        <h2 class="features-description highlight">Features</h2>
+        <div class="features-contain">
+          <div class="features-text">
+            <h3 class="features-header">
+              We are here to provide you with the
+              <span class="features-highlight">Best</span> services
+            </h3>
+            <p class="features-title">
+              Everything you need in a modern bank and more, get on our waiting
+              list today by clicking the button below
+            </p>
+            <a href="" class="hero-cta-1 features-button"
+              >View our services <img src="./assets/arrow-right.svg" alt="" />
+            </a>
+          </div>
+          <div class="features-props">
+            <div class="features-list">
+              <div class="features-item">
+                <img src="./assets/fast-delivery.svg" alt="" />
+                <h5>Swift Delivery 🚀</h5>
+                <p>No late transfer, get it instantly</p>
+              </div>
+              <div class="features-item">
+                <img src="./assets/0-fees.svg" alt="" />
+                <h5>$0 Fee's</h5>
+                <p>No fees on your account like the other banks</p>
+              </div>
+              <div class="features-item">
+                <img src="./assets//0-interest.svg" alt="" />
+                <h5>Interest &percnt;</h5>
+                <p>
+                  Interest when applying for loans depends on your agreement
+                  from the bank
+                </p>
+              </div>
+              <div class="features-item">
+                <img src="./assets/no-credit-check.svg" alt="" />
+                <h5>Credit Card</h5>
+                <p>Credit cards available at your demand</p>
+              </div>
+              <div class="features-item">
+                <img src="./assets/chat-support.svg" alt="" />
+                <h5>Chat Support</h5>
+                <p>Chat with a company representative anytime</p>
+              </div>
+              <div class="features-item">
+                <img src="./assets/fixed-payment-option.svg" alt="" />
+                <h5>Fixed Payment Option</h5>
+                <p>Payment Options will be provided</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="operation" class="operation section-hidden">
+      <div class="container container-pal1 operation-pal1">
+        <h2 class="operation-description highlight">Operations</h2>
+        <div class="operation-contain">
+          <div class="operation-text">
+            <div class="operation-t">
+              <h2 class="operation-header">Operations like no OTHER bank</h2>
+              <h5 class="operation-title">
+                Send money instantly, close your account with our web app and
+                don't look back but please do not close. our
+                <strong>CREDIT CARDS</strong> are trackable with the chip
+                installed on them
+              </h5>
+            </div>
+            <div class="creditcard operation-card">
+              <div class="front">
+                <div id="ccsingle"></div>
+                <svg
+                  version="1.1"
+                  id="cardfront"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 750 471"
+                  style="enable-background: new 0 0 750 471"
+                  xml:space="preserve"
+                >
+                  <g id="Front">
+                    <g id="CardBackground">
+                      <g id="Page-1_1_">
+                        <g id="amex_1_">
+                          <path
+                            id="Rectangle-1_1_"
+                            class="lightcolor grey"
+                            d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                C0,17.9,17.9,0,40,0z"
+                          />
+                        </g>
+                      </g>
+                      <path
+                        class="darkcolor greydark"
+                        d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z"
+                      />
+                    </g>
+                    <text
+                      transform="matrix(1 0 0 1 60.106 295.0121)"
+                      id="svgnumber"
+                      class="st2 st3 st4"
+                    >
+                      0123 4567 8910 1112
+                    </text>
+                    <text
+                      transform="matrix(1 0 0 1 54.1064 428.1723)"
+                      id="svgname"
+                      class="st2 st5 st6"
+                    >
+                      OGUNLEYE OLUWAFEMI
+                    </text>
+                    <text
+                      transform="matrix(1 0 0 1 54.1074 389.8793)"
+                      class="st7 st5 st8"
+                    >
+                      cardholder name
+                    </text>
+                    <text
+                      transform="matrix(1 0 0 1 479.7754 388.8793)"
+                      class="st7 st5 st8"
+                    >
+                      expiration
+                    </text>
+                    <text
+                      transform="matrix(1 0 0 1 65.1054 241.5)"
+                      class="st7 st5 st8"
+                    >
+                      card number
+                    </text>
+                    <g>
+                      <text
+                        transform="matrix(1 0 0 1 574.4219 433.8095)"
+                        id="svgexpire"
+                        class="st2 st5 st9"
+                      >
+                        01/23
+                      </text>
+                      <text
+                        transform="matrix(1 0 0 1 479.3848 417.0097)"
+                        class="st2 st10 st11"
+                      >
+                        VALID
+                      </text>
+                      <text
+                        transform="matrix(1 0 0 1 479.3848 435.6762)"
+                        class="st2 st10 st11"
+                      >
+                        THRU
+                      </text>
+                      <polygon
+                        class="st2"
+                        points="554.5,421 540.4,414.2 540.4,427.9 		"
+                      />
+                    </g>
+                    <g id="cchip">
+                      <g>
+                        <path
+                          class="st2"
+                          d="M168.1,143.6H82.9c-10.2,0-18.5-8.3-18.5-18.5V74.9c0-10.2,8.3-18.5,18.5-18.5h85.3
+                            c10.2,0,18.5,8.3,18.5,18.5v50.2C186.6,135.3,178.3,143.6,168.1,143.6z"
+                        />
+                      </g>
+                      <g>
+                        <g>
+                          <rect
+                            x="82"
+                            y="70"
+                            class="st12"
+                            width="1.5"
+                            height="60"
+                          />
+                        </g>
+                        <g>
+                          <rect
+                            x="167.4"
+                            y="70"
+                            class="st12"
+                            width="1.5"
+                            height="60"
+                          />
+                        </g>
+                        <g>
+                          <path
+                            class="st12"
+                            d="M125.5,130.8c-10.2,0-18.5-8.3-18.5-18.5c0-4.6,1.7-8.9,4.7-12.3c-3-3.4-4.7-7.7-4.7-12.3
+                                c0-10.2,8.3-18.5,18.5-18.5s18.5,8.3,18.5,18.5c0,4.6-1.7,8.9-4.7,12.3c3,3.4,4.7,7.7,4.7,12.3
+                                C143.9,122.5,135.7,130.8,125.5,130.8z M125.5,70.8c-9.3,0-16.9,7.6-16.9,16.9c0,4.4,1.7,8.6,4.8,11.8l0.5,0.5l-0.5,0.5
+                                c-3.1,3.2-4.8,7.4-4.8,11.8c0,9.3,7.6,16.9,16.9,16.9s16.9-7.6,16.9-16.9c0-4.4-1.7-8.6-4.8-11.8l-0.5-0.5l0.5-0.5
+                                c3.1-3.2,4.8-7.4,4.8-11.8C142.4,78.4,134.8,70.8,125.5,70.8z"
+                          />
+                        </g>
+                        <g>
+                          <rect
+                            x="82.8"
+                            y="82.1"
+                            class="st12"
+                            width="25.8"
+                            height="1.5"
+                          />
+                        </g>
+                        <g>
+                          <rect
+                            x="82.8"
+                            y="117.9"
+                            class="st12"
+                            width="26.1"
+                            height="1.5"
+                          />
+                        </g>
+                        <g>
+                          <rect
+                            x="142.4"
+                            y="82.1"
+                            class="st12"
+                            width="25.8"
+                            height="1.5"
+                          />
+                        </g>
+                        <g>
+                          <rect
+                            x="142"
+                            y="117.9"
+                            class="st12"
+                            width="26.2"
+                            height="1.5"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="Back"></g>
+                </svg>
+              </div>
+              <div class="back">
+                <svg
+                  version="1.1"
+                  id="cardback"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 750 471"
+                  style="enable-background: new 0 0 750 471"
+                  xml:space="preserve"
+                >
+                  <g id="Front">
+                    <line class="st0" x1="35.3" y1="10.4" x2="36.7" y2="11" />
+                  </g>
+                  <g id="Back">
+                    <g id="Page-1_2_">
+                      <g id="amex_2_">
+                        <path
+                          id="Rectangle-1_2_"
+                          class="darkcolor greydark"
+                          d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                            C0,17.9,17.9,0,40,0z"
+                        />
+                      </g>
+                    </g>
+                    <rect y="61.6" class="st2" width="750" height="78" />
+                    <g>
+                      <path
+                        class="st3"
+                        d="M701.1,249.1H48.9c-3.3,0-6-2.7-6-6v-52.5c0-3.3,2.7-6,6-6h652.1c3.3,0,6,2.7,6,6v52.5
+                        C707.1,246.4,704.4,249.1,701.1,249.1z"
+                      />
+                      <rect
+                        x="42.9"
+                        y="198.6"
+                        class="st4"
+                        width="664.1"
+                        height="10.5"
+                      />
+                      <rect
+                        x="42.9"
+                        y="224.5"
+                        class="st4"
+                        width="664.1"
+                        height="10.5"
+                      />
+                      <path
+                        class="st5"
+                        d="M701.1,184.6H618h-8h-10v64.5h10h8h83.1c3.3,0,6-2.7,6-6v-52.5C707.1,187.3,704.4,184.6,701.1,184.6z"
+                      />
+                    </g>
+                    <text
+                      transform="matrix(1 0 0 1 621.999 227.2734)"
+                      id="svgsecurity"
+                      class="st6 st7"
+                    >
+                      985
+                    </text>
+                    <g class="st8">
+                      <text
+                        transform="matrix(1 0 0 1 518.083 280.0879)"
+                        class="st9 st6 st10"
+                      >
+                        security code
+                      </text>
+                    </g>
+                    <rect
+                      x="58.1"
+                      y="378.6"
+                      class="st11"
+                      width="375.5"
+                      height="13.5"
+                    />
+                    <rect
+                      x="58.1"
+                      y="405.6"
+                      class="st11"
+                      width="421.7"
+                      height="13.5"
+                    />
+                    <text
+                      transform="matrix(1 0 0 1 59.5073 228.6099)"
+                      id="svgnameback"
+                      class="st12 st13"
+                    >
+                      Ogunleye Oluwafemi
+                    </text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="operation-main">
+            <div class="operation-tab-container">
+              <button
+                class="operation-tab operation-tab-1 operation-tab-active hero-cta-2"
+                data-tab="1"
+              >
+                <span class="hide-for-mobi operation-doro">Swift</span>Transfer
+              </button>
+              <button
+                href="#"
+                class="operation-tab operation-tab-2 hero-cta-2"
+                data-tab="2"
+              >
+                <span class="hide-for-mobi operation-doro">Quick</span> Loans
+              </button>
+              <button
+                href="#"
+                class="operation-tab operation-tab-3 hero-cta-2"
+                data-tab="3"
+              >
+                <span class="hide-for-mobi operation-doro">Closing</span>
+                Account
+              </button>
+            </div>
+            <div class="operation-content operation-content-1 operation-active">
+              <!-- <div class="operation-icon operation-icon-1">
+                <img src="./assets/no-credit-check.svg" alt="" />
+              </div> -->
+              <div class="operation-texts">
+                <h5 class="operation-headers">
+                  Transfer money to anyone instantly! No fees
+                </h5>
+                <p class="operation-describe">
+                  Connect your business account from any of the major banks,
+                  payment processors and neo banks in seconds.
+                </p>
+              </div>
+            </div>
+            <div class="operation-content operation-content-2">
+              <!-- <div class="operation-icon operation-icon-1">
+                <img src="./assets/chat-support.svg" alt="" />
+              </div> -->
+              <div class="operation-texts">
+                <h5 class="operation-headers">
+                  Buy a home or make your dreams come true, with instant loans
+                </h5>
+                <p class="operation-describe">
+                  Get loans after filling our application forms and opening an
+                  account with us, and get loan under 5 mins
+                </p>
+              </div>
+            </div>
+            <div class="operation-content operation-content-3">
+              <!-- <div class="operation-icon operation-icon-1">
+                <img src="./assets/fixed-payment-option.svg" alt="" />
+              </div> -->
+              <div class="operation-texts">
+                <h5 class="operation-headers">
+                  No longer need your account? No problem ! Close it instantly
+                </h5>
+                <p class="operation-describe">
+                  Once you do not want to bank with us anymore, you can close
+                  your account but our strong services would not make you
+                  consider that.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial" class="testimonial section-hidden">
+      <div class="container testimonial-pal1">
+        <h2 class="testimonial-description highlight">Testimonial</h2>
+        <div class="testimonial-text">
+          <div class="testimonial-toss">
+            <h3 class="testimonial-header">Still thinking about it?</h3>
+            <p class="testimonial-title">
+              As at today from data gathered by our team over 4000 individuals
+              and businesses are already on our waiting list to bank with us and
+              making their lives simpler
+            </p>
+          </div>
+          <div class="testimonial-image">
+            <img src="./assets/banking.svg" alt="" />
+          </div>
+        </div>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide">
+            <div class="testimonial-main">
+              <h5 class="testimonial-headers">Best financial decision ever</h5>
+              <blockquote class="testimonial-texts">
+                Get the adequate capital you need to settle your customers
+                without having to take a complex and expensive bank loan. Float
+                advances are more straight forward and funded much more quickly
+                than other forms of financing. Just connect your payment
+                processor to get started.
+              </blockquote>
+              <address class="testimonial-author">
+                <img
+                  src="./assets/testimonail4.jpg"
+                  alt=""
+                  class="testimonial-photo"
+                />
+                <div class="testimonial-info">
+                  <h6 class="testimonial-name">Prosper Otemuyiwa</h6>
+                  <p class="testimonial-location">Lagos, NG</p>
+                </div>
+              </address>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-main">
+              <h5 class="testimonial-headers">
+                Finally free from old-school banks
+              </h5>
+              <blockquote class="testimonial-texts">
+                Connect your Flutterwave, Shopify, Paystack, Magento or
+                Woocommerce account and get instant access to your sales, a
+                revolving credit line and other benefits. Need cash for ad
+                budgets or inventory purchases? Bank with us.
+              </blockquote>
+              <address class="testimonial-author">
+                <img
+                  src="./assets/Ire_Aderinokun.jpg"
+                  alt=""
+                  class="testimonial-photo"
+                />
+                <div class="testimonial-info">
+                  <h6 class="testimonial-name">Ire Aderinokun</h6>
+                  <p class="testimonial-location">Lagos, NG</p>
+                </div>
+              </address>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-main">
+              <h5 class="testimonial-headers">
+                Send Money to different countries
+              </h5>
+              <blockquote class="testimonial-texts">
+                Sending money has always been a problem at our bank, you have
+                the flexibility to send money at any time you want and it gets
+                to whoever you sent it to under seconds, thats is how fast our
+                API works, no fee on transfers
+              </blockquote>
+              <address class="testimonial-author">
+                <img
+                  src="./assets/testimonial1.jpg"
+                  alt=""
+                  class="testimonial-photo"
+                />
+                <div class="testimonial-info">
+                  <h6 class="testimonial-name">Ogunleye Oluwafemi</h6>
+                  <p class="testimonial-location">Lagos, NG</p>
+                </div>
+              </address>
+            </div>
+          </div>
+          <div class="testimonial-dots"></div>
+        </div>
+      </div>
+    </section>
+    <section id="footer" class="footer section-hidden">
+      <div class="container container-pal1">
+        <div class="footer-main">
+          <div class="footer-time">
+            <img src="./assets/favicon.svg" alt="" />
+            <div class="footer-timer">
+              <h3 class="footer-touch">
+                Coming <span class="footer-timer-title">05/03/2037</span>
+              </h3>
+              <ul class="footer-timer-body">
+                <li class="footer-timer-section">
+                  <span class="footer-timer-counter">00</span>
+                  <p class="footer-timer-unit">days</p>
+                </li>
+                <li class="footer-timer-section">
+                  <span class="footer-timer-counter">00</span>
+                  <p class="footer-timer-unit">hours</p>
+                </li>
+                <li class="footer-timer-section">
+                  <span class="footer-timer-counter">00</span>
+                  <p class="footer-timer-unit">min</p>
+                </li>
+                <li class="footer-timer-section">
+                  <span class="footer-timer-counter">00</span>
+                  <p class="footer-timer-unit">sec</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-office">
+            <h2 class="footer-text">
+              Office
+              <div class="underline"><span></span></div>
+            </h2>
+            <p>Adeola Odeku</p>
+            <p>Victoria island, Lagos</p>
+            <p>Nigeria</p>
+            <p class="footer-email">bank@gmail.com</p>
+            <h4>+234903428475</h4>
+          </div>
+          <div class="footer-links">
+            <h2 class="footer-text">
+              Links
+              <div class="underline"><span></span></div>
+            </h2>
+            <ul class="footer-links-body">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#operation">Operations</a></li>
+              <li><a href="#testimonial">Testimonials</a></li>
+              <li><a href="signup">Get started</a></li>
+            </ul>
+          </div>
+          <div class="footer-form">
+            <h2 class="footer-text">
+              Newsletter
+              <div class="underline closs"><span></span></div>
+            </h2>
+            <form>
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="Enter your email" required />
+              <button class="submit">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+            <div class="footer-icon">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <span class="circle talk-about-circle-one"></span>
+        <span class="circle talk-about-circle-two"></span>
+        <span class="circle talk-about-circle-three"></span>
+        <span class="circle talk-about-circle-four"></span>
+        <span class="circle talk-about-circle-five"></span>
+      </div>
+    </section>
+
+    <div class="modal hidden">
+      <button class="btn-close-modal">&times;</button>
+      <h2 class="modal-header">
+        Open your bank account <br />in just
+        <span class="highlight"> 5 Minutes</span>
+      </h2>
+      <form class="modal-form">
+        <div>
+          <label for="">First Name:</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label for="">Last Name:</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label for="">Email Address:</label>
+          <input type="email" />
+        </div>
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- <svg viewBox="0 0 256 256">
+      <path class="path" d="m 15.625507,46.199537 55.767886,-32.030352 55.623047,32.281229 -0.14485,64.311586 0.14485,-64.311586 55.76788,-32.030352 55.62305,32.281229 -0.14485,64.311579 -55.76788,32.03036 -55.62305,-32.28123 55.62305,32.28123 -0.14485,64.31158 -55.76788,32.03035 L 70.958866,207.10393 71.103708,142.79235 126.87159,110.762 71.103708,142.79235 15.480664,110.51112 Z" style="fill:#fff;stroke:#000;stroke-width:13;stroke-linejoin:round;stroke-linecap:round" />
+    </svg> -->
+  </body>
+</html>

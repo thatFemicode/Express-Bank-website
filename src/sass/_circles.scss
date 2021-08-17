@@ -1,0 +1,83 @@
+.circle {
+  width: 292px;
+  height: 292px;
+  opacity: 0.4;
+  position: absolute;
+  //   z-index: 100000;
+  border-radius: 50%;
+}
+.talk-about-circle-one {
+  @include breakpoint-up(grid) {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+    top: -146px;
+    right: 292px;
+  }
+
+  //   @include responsive {
+  //     right: 126px;
+  //   }
+  //   @include mobile {
+  //     right: 126px;
+  //   }
+}
+.talk-about {
+  &-circle-two {
+    @include breakpoint-up(grid) {
+      background-color: #000000;
+      background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+      top: -146px;
+      right: 0px;
+    }
+
+    //   @include responsive {
+    //     right: -166px;
+    //   }
+    //   @include mobile {
+    //     right: -166px;
+    //   }
+  }
+  &-circle-three {
+    @include breakpoint-up(grid) {
+      background-color: #000000;
+      background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+      bottom: -146px;
+      right: 0px;
+    }
+    //   @include responsive {
+    //     right: -166px;
+    //   }
+    //   @include mobile {
+    //     right: -166px;
+    //   }
+  }
+  &-circle-four {
+    @include breakpoint-up(grid) {
+      background-color: #000000;
+      background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+      bottom: -146px;
+      right: 292px;
+    }
+    //   @include responsive {
+    //     right: 126px;
+    //   }
+    //   @include mobile {
+    //     right: 126px;
+    //   }
+  }
+
+  &-circle-five {
+    @include breakpoint-up(grid) {
+      background-color: #000000;
+      background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+      bottom: -146px;
+      right: 584px;
+    }
+    //   @include responsive {
+    //     right: 418px;
+    //   }
+    //   @include mobile {
+    //     right: 418px;
+    //   }
+  }
+}
