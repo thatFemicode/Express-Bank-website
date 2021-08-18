@@ -414,3 +414,18 @@ document.addEventListener('keydown', function (e) {
 // he.addEventListener('click', function () {
 //   he.innerHTML = `<div class="dd">he is here </div>`;
 // });
+
+// Function to scroll to section
+// UI elements for nav link
+const navLink = document.querySelector('.nav-links');
+function scrollTo(e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains('nav-link')) {
+    const id = e.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+    });
+  }
+}
+navLink.addEventListener('click', scrollTo);
