@@ -421,11 +421,29 @@ const navLink = document.querySelector('.nav-links');
 function scrollTo(e) {
   e.preventDefault();
 
-  if (e.target.classList.contains('nav-link')) {
+  if (
+    e.target.classList.contains('nav-link') ||
+    e.target.classList.contains('mobile-link')
+  ) {
     const id = e.target.getAttribute('href');
+    body.classList.remove('noscroll');
+
     document.querySelector(id).scrollIntoView({
       behavior: 'smooth',
     });
   }
 }
 navLink.addEventListener('click', scrollTo);
+
+const mobileLink = document.querySelector('.mobile-links');
+// function scrolled(e) {
+//   e.preventDefault();
+
+//   if (e.target.classList.contains('mobile-link')) {
+//     const id = e.target.getAttribute('href');
+//     document.querySelector(id).scrollIntoView({
+//       behavior: 'smooth',
+//     });
+//   }
+// }
+mobileLink.addEventListener('click', scrollTo);
