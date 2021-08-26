@@ -6,9 +6,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 let mode = 'development';
-
+let target = 'web';
 if (process.env.NODE_ENV === 'production') {
   mode = 'production';
+  target = 'browserslist';
 }
 // const plugins = [
 //   // new HtmlWebpackPlugin({
@@ -35,6 +36,7 @@ const plugins = [
 ];
 module.exports = {
   mode: mode,
+  target: target,
   devtool: 'source-map',
 
   entry: {
@@ -62,6 +64,23 @@ module.exports = {
           'postcss-loader',
           'sass-loader',
         ],
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: {
+          // without additional settings, this will reference .babelrc
+          loader: 'babel-loader',
+          options: {
+            /**
+             * From the docs: When set, the given directory will be used
+             * to cache the results of the loader. Future webpack builds
+             * will attempt to read from the cache to avoid needing to run
+             * the potentially expensive Babel recompilation process on each run.
+             */
+            cacheDirectory: true,
+          },
+        },
       },
       {
         test: /\.(svg|png|jpg|gif|webp)$/,
